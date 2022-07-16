@@ -1,0 +1,187 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\centering
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+
+\begin{center}
+    {\LARGE Naufal Fikri Setiawan}\\
+    naufal@naufik.net -- https://naufik.net
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-2pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {InGenious AI}{Feb 2020 -- Present}
+      {Full Stack Software Engineer}{Melbourne, VIC AU}
+      \resumeItemListStart
+        \resumeItem{Develop and maintain features for the InGenious AI chatbot platform. Written in Javascript.}
+        \resumeItem{Develop and maintain pipelines for machine learning operations. Written in Python.}
+        \resumeItem{Monitor for platform faults and anomalies and respond to them by introducing appropriate patches.}
+        \resumeItem{Perform maintenance of back-end services and their configurations via Amazon Web Services (Web and CLI).}
+        \resumeItem{Introduced continuous development pipelines to the development workflow at InGenious AI using Bitbucket Pipelines}
+        \resumeItem{Successfully added two new third party messaging integrations into the platform. Enabling InGenious AI and partnering companies to
+        acquire bigger clients in terms of market share.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Melbourne}{Feb 2018 -- Feb 2020}
+      {Tutor and Demonstrator (Casual)}{Melbourne, VIC AU}
+      \resumeItemListStart
+        \resumeItem{Delivered materials for many classes at various levels to students in person while also assisting beyond the classroom via an online system.}
+        \resumeItem{Marked assignments objectively according to rubrics and ensuring that grades and feedback are delivered to students in a timely manner while being constructive.}
+        \resumeItem{Classes delivered:
+            \begin{itemize}
+                \item \emph{Introduction to Programming}. Teaches basic programming at Master's Level, focused on students diverting from other disciplines to pursue a postgraduate degree in computing. Taught using Python.
+                \item \emph{Media Computation}. Teaches basic programming with a focus on design and multimedia (images, websites and animations). Taught using Python.
+                \item \emph{Object Oriented Software Development}. Introduces data modelling and designing abstractions for object-oriented software. Taught using Java.
+                \item \emph{Models of Computation}. Penultimate subject teaching theoretical computer science concepts such as formal languages, automatons and Turing machines. Taught using Haskell.
+            \end{itemize}
+        }
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Melbourne}{Jul 2019 -- Nov 2019}
+      {Research Assistant (Casual)}{Melbourne, VIC AU}
+      \resumeItemListStart
+        \resumeItem{Formulated a proof-of-concept for database indexing.}
+        \resumeItem{Received honorable mention for "Best Student Paper Award".}
+        \resumeItem{Designed and executed experiments to evaluate different approaches to model data primarily using PyTorch, Python, and Wolfram Mathematica.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+      \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nodeflux}{Jan 2018 -- Feb 2018}
+      {Software Engineer Intern (Full Time)}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Developed a ledger system for license activations that enables Nodeflux to sell their software and monitor client license activations. Written using Typescript.}
+        \resumeItem{Modeled, designed and tested database schemas to log transactions using PostgreSQL.}
+        \resumeItem{Implemented test-driven development using Typescript testing frameworks: Chai, Mocha, and Sinon.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+  \section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of Melbourne}{Jul 2016 - Jul 2019}
+      {Bachelor of Science (Computing and Software Systems)}{Melbourne, VIC AU}
+        \resumeItemListStart
+        \resumeItem{Thesis Topic: "Function Interpolation for Learned Index Structures". Work on paper continued as casual research assistant.}
+        \resumeItem{Weighted Average Mark: 79.18/100 (Second Class Honours)}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Function Interpolation for Learned Index Structures. Databases Theory and Applications. Australasian Database Conference 2020. p. 68-80.}{\\Setiawan, N., Rubinstein, B.I.P.,  Borovica-Gajic, R.}
+}}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Proficient with} -- Javascript and Typescript (NodeJS), SQL, Python, Java, AWS (Container/VM Deployments)
+    }}
+    \small{\item{
+     \textbf{Working knowledge of} -- Azure VMs, Terraform, AWS Security, C\# (.NET Core), React, Docker
+    }}
+ \end{itemize}
+
+\end{document}
