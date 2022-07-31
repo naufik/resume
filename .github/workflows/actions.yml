@@ -1,0 +1,16 @@
+name: Render TeX
+on:
+  push:
+    branches:
+      - daddy
+      - gh-actions
+jobs:
+  render_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
