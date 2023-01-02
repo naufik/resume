@@ -4,6 +4,7 @@ on:
     branches:
       - daddy
       - gh-actions
+  workflow_call:
 jobs:
   render_latex:
     runs-on: ubuntu-latest
@@ -14,8 +15,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-      - name: Release
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
+          name: resume.pdf
           path: resume.pdf
-
